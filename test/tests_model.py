@@ -11,7 +11,6 @@ import os
 class TestDataPrep(TestCase):
     def test_train_data(self):
         path_f = "test/fake.csv"
-        print('test1')
         df = read_data(path_f)
         X = df.drop(["condition"], axis=1)
         y = df.condition
@@ -24,7 +23,6 @@ class TestDataPrep(TestCase):
 
     def test_predict_eval(self):
         path_f = "test/fake.csv"
-        print('tyt')
         df = read_data(path_f)
         X = df.drop(["condition"], axis=1)
         y = df.condition

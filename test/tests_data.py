@@ -8,7 +8,6 @@ from config.create_config_params import DataParams
 class TestDataPrep(TestCase):
     def test_read_data(self):
         path_f = "test/fake.csv"
-        print('test1')
         df = read_data(path_f)
         self.assertIsInstance(df, DataFrame)
         self.assertEqual(500, df.shape[0])
@@ -16,7 +15,6 @@ class TestDataPrep(TestCase):
 
     def test_splitting_data(self):
         path_f = "test/fake.csv"
-        print('tyt')
         df = read_data(path_f)
         X = df.drop(["condition"], axis=1)
         y = df.condition
