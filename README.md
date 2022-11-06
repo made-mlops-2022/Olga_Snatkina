@@ -35,8 +35,6 @@ should specify the path to the config and the level of logging
 │                         the creator's initials, and a short `-` delimited description, e.g.
 │                         `1.0-jqp-initial-data-exploration`.
 │
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
 ├── config             <- Create config params using dataclasses and yaml files.
 │   ├── create_config_params        <- Read config, create dataclasses schema.
 │   |  
@@ -57,5 +55,6 @@ should specify the path to the config and the level of logging
 │   ├── tests_data     <- test for model modules
 │   │
 ├── predict_pipeline   <- pipeline module for predict data
+|
 └── train_pipeline     <- pipeline module for train models
 ```
