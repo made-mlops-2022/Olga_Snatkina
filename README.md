@@ -20,6 +20,7 @@ should specify the path to the config and the level of logging
  python -m unittest test/tests_*.py
  ```
 
+**Project Organization**
 ```
 ├── README.md          <- The top-level README for developers using this project.
 ├── data               <- Directory with dataset for training and saving predictions.
@@ -52,7 +53,7 @@ should specify the path to the config and the level of logging
 │   │
 │   ├── tests_data     <- test for data modules
 │   │
-│   ├── tests_data     <- test for model modules
+│   ├── tests_model     <- test for model modules
 │   │
 ├── predict_pipeline   <- pipeline module for predict data
 |
