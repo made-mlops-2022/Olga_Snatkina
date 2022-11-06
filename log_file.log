@@ -1,0 +1,32 @@
+Data uploaded
+Data shape (297, 14)
+train shape (267, 13)
+test shape (30, 13)
+model is ready
+predicts shape (30,)
+metrics written to file
+model saved
+Data for predict uploaded
+Data shape (297, 14)
+model is uploaded
+predicts shape (297,)
+predictions written to file
+Data uploaded
+Data shape (297, 14)
+train shape (237, 13)
+test shape (60, 13)
+model is ready
+predicts shape (60,)
+Data uploaded
+Data shape (297, 14)
+train shape (237, 13)
+test shape (60, 13)
+model is ready
+predicts shape (60,)
+metrics written to file
+model saved
+Data for predict uploaded
+Data shape (297, 14)
+model is uploaded
+predicts shape (297,)
+predictions written to file
