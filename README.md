@@ -77,3 +77,16 @@ should specify the path to the config and the level of logging
 |
 └──
 ```
+Build from dir online_reference/ 
+``` docker build -t olchek/online_reference . ```
+
+Pull from dockerHub 
+``` docker pull olchek/online_reference ```
+
+Run docker
+``` docker run -d -p 8000:8000 olchek/online_reference ```
+
+Run tests (from docker terminal)
+``` python -m pytest tests.py ```
+
+testing post server for fastapi by Postman
