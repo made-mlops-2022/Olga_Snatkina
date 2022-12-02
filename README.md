@@ -1,6 +1,8 @@
 # Olga_Snatkina
 MADE MLOPS
 
+**HW1**
+
 **Installation:**
 ```
 python -m venv .venv
@@ -46,18 +48,32 @@ should specify the path to the config and the level of logging
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
 │
-├── tests              <- Source code for use in this project.
+├── tests              <- Source code for use in this project
 │   ├── __init__.py    <- Makes src a Python module
 │   │
 │   ├── create_faker_dataset          <- script for generating synthetic data. 
 │   │
-│   ├── tests_data     <- test for data modules
+│   ├── tests_data     <- test for data modules.
 │   │
-│   ├── tests_model     <- test for model modules
+│   ├── tests_model    <- test for model modules.
 │   │
-├── predict_pipeline   <- pipeline module for predict data
+├── predict_pipeline   <- pipeline module for predict data.
 |
-└── train_pipeline     <- pipeline module for train models
+├── train_pipeline     <- pipeline module for train models.
 ```
 
 **HW2**
+```
+...
+│
+├── online_inference  <- inference for ml_project model using FastApi.
+│   ├── fastapi_app   <- app modul: loading model, predict, post and get on service.
+│   │
+│   ├── my_requests   <- module getting request to server.
+|   |
+|   ├── Dockerfile    <- build for Docker.
+|   |
+|   ├── tests         <- tests for fastapi.
+|
+└──
+```
