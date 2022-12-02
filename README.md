@@ -77,10 +77,13 @@ should specify the path to the config and the level of logging
 |
 └──
 ```
+
 Build from dir online_reference/ 
+
 ``` docker build -t olchek/online_reference . ```
 
 Pull from dockerHub 
+
 ``` docker pull olchek/online_reference ```
 
 Run docker
