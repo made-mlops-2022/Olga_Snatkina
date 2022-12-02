@@ -87,9 +87,11 @@ Pull from dockerHub
 ``` docker pull olchek/online_reference ```
 
 Run docker
+
 ``` docker run -d -p 8000:8000 olchek/online_reference ```
 
 Run tests (from docker terminal)
+
 ``` python -m pytest tests.py ```
 
 testing post server for fastapi by Postman
