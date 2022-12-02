@@ -59,3 +59,5 @@ should specify the path to the config and the level of logging
 |
 └── train_pipeline     <- pipeline module for train models
 ```
+
+**HW2**
