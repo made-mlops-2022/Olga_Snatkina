@@ -1,9 +1,10 @@
 FROM python:3.10
 
-COPY fastapi_app.py my_requests.py online_inference/
+COPY fastapi_app.py my_requests.py tests.py online_inference/
 COPY requirements.txt online_inference/
 COPY models/model.pkl online_inference/models/model.pkl
 COPY input_data/heart_cleveland_upload.csv online_inference/input_data/heart_cleveland_upload.csv
+
 WORKDIR online_inference/
 
 ENV MODEL_PATH="models/model.pkl"

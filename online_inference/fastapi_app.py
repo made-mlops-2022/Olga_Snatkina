@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from typing import List, Literal
-
+from typing import Literal
 import pickle
 import pandas as pd
 import logging
@@ -9,8 +8,6 @@ import os
 
 
 ml_project_app = FastAPI()
-FEATURES = None
-PIPELINE = None
 
 logger = logging.getLogger()
 logging.basicConfig(
@@ -34,9 +31,6 @@ class DatasetType(BaseModel):
     ca: Literal[0, 1, 2, 3]
     thal: Literal[0, 1, 2]
 
-class ResponseType(BaseModel):
-    preds: List[int]
-
 
 @ml_project_app.on_event("startup")
 def load_model() -> None:
@@ -52,15 +46,14 @@ def load_model() -> None:
 
 
 @ml_project_app.post('/predict')
-def predict(data: DatasetType) -> ResponseType:
+def predict(data: DatasetType):
     logger.info('Got request')
-    data_df = pd.DataFrame([data.dict()])
-    print(data_df)
+    data_df = pd.DataFrame.from_records([data.dict()])
     preds = MODEL.predict(data_df)
     logger.info('predictions ready')
-    response = ResponseType(preds=list(preds))
     logger.info('Send prediction')
-    return response
+    response = "yes" if preds[0] else "no"
+    return {"prediction": response}
 
 
 @ml_project_app.get('/')
