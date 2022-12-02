@@ -82,7 +82,7 @@ Build from dir online_reference/
 
 ``` docker build -t olchek/online_reference . ```
 
-Pull from dockerHub: [https://hub.docker.com/r/olchek/online_reference]
+Pull from [DockerHub](https://hub.docker.com/r/olchek/online_reference)
 
 ``` docker pull olchek/online_reference ```
 
