@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: online-inference-resources
+spec:
+  containers:
+    - image: olchek/online_reference
+      name: online-inference-resources
+      ports:
+        - containerPort: 8000
+      resources:
+        requests:
+            memory: "1Gi"
+            cpu: "500m"
+        limits:
+            memory: "5Gi"
