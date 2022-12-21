@@ -95,6 +95,7 @@ Run tests (from docker terminal)
 ``` python -m pytest tests.py ```
 
 testing post server for fastapi by Postman
+
 **HW4**
 
 ```
@@ -106,7 +107,14 @@ testing post server for fastapi by Postman
 ```
 
 Start cluster
+
 ``` minikube start ```
-check clister ``` kubectl cluster-info ```
-deploy pod manifests ``` kubectl apply -f online-inference-*.yaml ```
+
+check clister 
+
+``` kubectl cluster-info ```
+
+deploy pod manifests 
+``` kubectl apply -f online-inference-*.yaml ```
+
 check results ``` kubectl get pods ```
