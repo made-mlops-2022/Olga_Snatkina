@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: online-inference
+  labels:
+    app: online-inference-made
+spec:
+  containers:
+    - image: olchek/online_reference
+      name: online-inference
+      ports:
+         - containerPort: 8000
